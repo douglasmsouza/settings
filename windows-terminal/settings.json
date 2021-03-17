@@ -27,26 +27,15 @@
     {
         "defaults":
         {
-            // Put settings here that you want to apply to all profiles.
+            "colorScheme" : "VSCode"
         },
         "list":
         [
-            { 
-                "guid" : "{14ad203f-52cc-4110-90d6-d96e0f41b64d}", 
-                "name" : "Cygwin",
-                "hidden": false,
-                "closeOnExit" : true,
-                "commandline" : "C:/dev/util/cygwin64/bin/bash.exe -l", 
-                "icon": "C:/dev/util/cygwin64/Cygwin-Terminal.ico",
-                "fontFace" : "Cascadia Code Light",
-                "fontSize": 11
-            },
             {
                 "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
                 "hidden": false,
                 "name": "Ubuntu-18.04",
                 "source": "Windows.Terminal.Wsl",
-                "fontFace" : "Cascadia Code Light",
                 "fontSize": 11
             },
             {
@@ -55,7 +44,6 @@
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
                 "hidden": false,
-                "fontFace" : "Cascadia Code Light",
                 "fontSize": 11
             },
             {
@@ -64,7 +52,15 @@
                 "name": "Prompt de comando",
                 "commandline": "cmd.exe",
                 "hidden": false,
-                "fontFace" : "Cascadia Code Light",
+                "fontSize": 11
+            },
+            {
+                "guid": "{71a79470-b190-4edf-a62a-ab59c8cb9dad}",
+                "name": "x64 Native Tools Command Prompt",
+                "commandline": "%comspec% /k \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Auxiliary\\Build\\vcvars64.bat\"",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+                "startingDirectory": "%USERPROFILE%",
                 "fontSize": 11
             },
             {
@@ -72,17 +68,15 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure",
-                "fontFace" : "Cascadia Code Light",
                 "fontSize": 11
             },
-            {
-                "guid": "{82c22588-4bab-4cf7-915b-32c2ec530c39}",
-                "name": "Cmder",
-                "commandline": "cmd.exe /k C:/dev/util/cmder/vendor/init.bat",
-                "icon" : " C:/dev/util/cmder/icons/cmder.ico",
+            { 
+                "guid" : "{14ad203f-52cc-4110-90d6-d96e0f41b64d}", 
+                "name" : "Cygwin",
                 "hidden": false,
                 "closeOnExit" : true,
-                "fontFace" : "Cascadia Code Light",
+                "commandline" : "C:/dev/util/cygwin64/bin/bash.exe -l", 
+                "icon": "C:/dev/util/cygwin64/Cygwin-Terminal.ico",
                 "fontSize": 11
             }
         ]
@@ -90,7 +84,165 @@
 
     // Add custom color schemes to this array.
     // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
-    "schemes": [],
+    "schemes": [
+        {
+            "name": "Dracula",
+            "cursorColor": "#F8F8F2",
+            "selectionBackground": "#44475A",
+            "background": "#282A36",
+            "foreground": "#F8F8F2",
+            "black": "#21222C",
+            "blue": "#BD93F9",
+            "cyan": "#8BE9FD",
+            "green": "#50FA7B",
+            "purple": "#FF79C6",
+            "red": "#FF5555",
+            "white": "#F8F8F2",
+            "yellow": "#F1FA8C",
+            "brightBlack": "#6272A4",
+            "brightBlue": "#D6ACFF",
+            "brightCyan": "#A4FFFF",
+            "brightGreen": "#69FF94",
+            "brightPurple": "#FF92DF",
+            "brightRed": "#FF6E6E",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFFA5"
+        },
+        {
+            "name": "Afterglow",
+            "black": "#151515",
+            "red": "#ac4142",
+            "green": "#7e8e50",
+            "yellow": "#e5b567",
+            "blue": "#6c99bb",
+            "purple": "#9f4e85",
+            "cyan": "#7dd6cf",
+            "white": "#d0d0d0",
+            "brightBlack": "#505050",
+            "brightRed": "#ac4142",
+            "brightGreen": "#7e8e50",
+            "brightYellow": "#e5b567",
+            "brightBlue": "#6c99bb",
+            "brightPurple": "#9f4e85",
+            "brightCyan": "#7dd6cf",
+            "brightWhite": "#f5f5f5",
+            "background": "#212121",
+            "foreground": "#d0d0d0",
+            "selectionBackground": "#303030",
+            "cursorColor": "#d0d0d0"
+          },
+          {
+            "name": "Andromeda",
+            "black": "#000000",
+            "red": "#cd3131",
+            "green": "#05bc79",
+            "yellow": "#e5e512",
+            "blue": "#2472c8",
+            "purple": "#bc3fbc",
+            "cyan": "#0fa8cd",
+            "white": "#e5e5e5",
+            "brightBlack": "#666666",
+            "brightRed": "#cd3131",
+            "brightGreen": "#05bc79",
+            "brightYellow": "#e5e512",
+            "brightBlue": "#2472c8",
+            "brightPurple": "#bc3fbc",
+            "brightCyan": "#0fa8cd",
+            "brightWhite": "#e5e5e5",
+            "background": "#262a33",
+            "foreground": "#e5e5e5",
+            "selectionBackground": "#5a5c62",
+            "cursorColor": "#f8f8f0"
+          },
+          {
+            "name": "Aurora",
+            "black": "#23262e",
+            "red": "#f0266f",
+            "green": "#8fd46d",
+            "yellow": "#ffe66d",
+            "blue": "#0321d7",
+            "purple": "#ee5d43",
+            "cyan": "#03d6b8",
+            "white": "#c74ded",
+            "brightBlack": "#292e38",
+            "brightRed": "#f92672",
+            "brightGreen": "#8fd46d",
+            "brightYellow": "#ffe66d",
+            "brightBlue": "#03d6b8",
+            "brightPurple": "#ee5d43",
+            "brightCyan": "#03d6b8",
+            "brightWhite": "#c74ded",
+            "background": "#23262e",
+            "foreground": "#ffca28",
+            "selectionBackground": "#292e38",
+            "cursorColor": "#ee5d43"
+          },
+          {
+            "name": "Broadcast",
+            "black": "#000000",
+            "red": "#da4939",
+            "green": "#519f50",
+            "yellow": "#ffd24a",
+            "blue": "#6d9cbe",
+            "purple": "#d0d0ff",
+            "cyan": "#6e9cbe",
+            "white": "#ffffff",
+            "brightBlack": "#323232",
+            "brightRed": "#ff7b6b",
+            "brightGreen": "#83d182",
+            "brightYellow": "#ffff7c",
+            "brightBlue": "#9fcef0",
+            "brightPurple": "#ffffff",
+            "brightCyan": "#a0cef0",
+            "brightWhite": "#ffffff",
+            "background": "#2b2b2b",
+            "foreground": "#e6e1dc",
+            "selectionBackground": "#5a647e",
+            "cursorColor": "#ffffff"
+          },
+          {
+            "name" : "Monokai Night",
+            "background" : "#1f1f1f",
+            "foreground" : "#f8f8f8",
+            "black" : "#1f1f1f",
+            "blue" : "#6699df",
+            "cyan" : "#e69f66",
+            "green" : "#a6e22e",
+            "purple" : "#ae81ff",
+            "red" : "#f92672",
+            "white" : "#f8f8f2",
+            "yellow" : "#e6db74",
+            "brightBlack" : "#75715e",
+            "brightBlue" : "#66d9ef",
+            "brightCyan" : "#e69f66",
+            "brightGreen" : "#a6e22e",
+            "brightPurple" : "#ae81ff",
+            "brightRed" : "#f92672",
+            "brightWhite" : "#f8f8f2",
+            "brightYellow" : "#e6db74"
+        },
+        {
+            "name": "VSCode",
+            "background" : "#232323",
+            "black" : "#000000",
+            "blue" : "#579BD5",
+            "brightBlack" : "#797979",
+            "brightBlue" : "#9BDBFE",
+            "brightCyan" : "#2BC4E2",
+            "brightGreen" : "#1AD69C",
+            "brightPurple" : "#DF89DD",
+            "brightRed" : "#F6645D",
+            "brightWhite" : "#EAEAEA",
+            "brightYellow" : "#F6F353",
+            "cyan" : "#00B6D6",
+            "foreground" : "#D3D3D3",
+            "green" : "#3FC48A",
+            "purple" : "#CA5BC8",
+            "red" : "#D8473F",
+            "white" : "#EAEAEA",
+            "yellow" : "#D7BA7D"
+        }
+    ],
 
     // Add custom keybindings to this array.
     // To unbind a key combination from your defaults.json, set the command to "unbound".
